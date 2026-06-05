@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Ariel & Daiana — Invitación" />
+  <title>Ariel & Daiana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="body--intro">
+  <!-- ========== INTRO: sobre entreabierto (iniciales visibles) ========== -->
+  <div class="intro" id="intro" aria-hidden="false">
+    <p class="intro__hint">Tocá para abrir</p>
+
+    <button type="button" class="envelope-hitbox" id="envelopeBtn" aria-label="Abrir invitación">
+      <div class="envelope-scene">
+        <div class="envelope" id="envelope">
+          <div class="envelope__shadow"></div>
+          <div class="envelope__body"></div>
+          <div class="envelope__card-wrap">
+            <div class="envelope__letter" aria-hidden="true">
+              <span class="envelope__letter-initials">A <span class="envelope__letter-amp">&amp;</span> D</span>
+              <span class="envelope__letter-accent" aria-hidden="true"></span>
+            </div>
+          </div>
+          <div class="envelope__flap envelope__flap--back"></div>
+          <div class="envelope__pocket"></div>
+          <div class="envelope__flap envelope__flap--front"></div>
+          <div class="envelope__seal">
+            <span class="envelope__wax" aria-hidden="true"></span>
+            <span class="envelope__seal-heart" aria-hidden="true">♥</span>
+          </div>
+        </div>
+      </div>
+    </button>
+  </div>
+
+  <!-- ========== REEL: secciones pantalla completa ========== -->
+  <main class="reel" id="reel" hidden aria-hidden="true">
+    <!-- 1
+    <section class="reel-section reel-section--editorial-bg section--bg-floral" data-reveal>
+      <div class="reel-section__inner">
+        <div class="reel-icon-wrap" aria-hidden="true">
+          <svg class="reel-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="8.5" cy="14" r="3.5"/>
+            <circle cx="15.5" cy="14" r="3.5"/>
+            <path d="M8.5 10.5c1.6-2.2 4.4-2.2 6 0"/>
+          </svg>
+        </div>
+        <h2 class="reel-title reel-title--script">Nos casamos</h2>
+      </div>
+    </section> -->
+
+    <!-- 2 
+    <section class="reel-section reel-section--dark" data-reveal>
+      <div class="reel-section__inner">
+        <div class="reel-icon-wrap reel-icon-wrap--light" aria-hidden="true">
+          <svg class="reel-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 21s-6-4.35-8-8.5C2.5 9.8 3.8 6.2 7 5c2-.8 4.1.2 5 2 1-1.8 3.2-2.8 5-2 3.2 1.2 4.5 4.8 3 7.5-2 4.15-8 8.5-8 8.5z"/>
+          </svg>
+        </div>
+        <h2 class="reel-names">Ariel <span class="ampersand">&amp;</span> Daiana</h2>
+      </div>
+    </section> -->
+
+    <section class="reel-section section--bg-floral" data-reveal>
+     <div class="reel-section__inner">
+      <span class="reel-eyebrow">Nos casamos</span>
+       <h1 class="reel-title reel-title--script">Ariel & Daiana</h1>
+     </div>
+    </section>
+
+    <!-- 3 
+    <section class="reel-section reel-section--editorial-bg" data-reveal>
+      <div class="reel-section__inner">
+        <div class="reel-icon-wrap" aria-hidden="true">
+          <svg class="reel-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="2"/>
+            <path d="M16 2v4M8 2v4M3 10h18"/>
+          </svg>
+        </div>
+        <p class="reel-date">24 de octubre</p>
+        <p class="reel-year">2026</p>
+      </div>
+    </section> -->
+
+    <!-- 4 Horario 
+    <section class="reel-section reel-section--muted" data-reveal>
+      <div class="reel-section__inner">
+        <div class="reel-icon-wrap reel-icon-wrap--muted" aria-hidden="true">
+          <svg class="reel-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M12 7v5l3.5 2"/>
+          </svg>
+        </div>
+        <p class="reel-label">Horario</p>
+        <p class="reel-schedule">20:00 hs · Recepción</p>
+      </div>
+    </section> -->
+
+ <!--Cuenta regresiva-->
+<section class="reel-section reel-section--editorial-bg section--bg-floral" data-reveal id="section-evento">
+  <div class="reel-section__inner">
+
+    <!-- Ícono -->
+    <div class="reel-icon-wrap" aria-hidden="true">
+      <svg class="reel-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="4" width="18" height="18" rx="2"/>
+        <path d="M16 2v4M8 2v4M3 10h18"/>
+      </svg>
+    </div>
+
+    <!-- Fecha -->
+    <p class="reel-label">Fecha</p>
+    <h2 class="reel-title">24 de octubre 2026</h2>
+
+    <!-- Hora -->
+    <p class="reel-label">Horario</p>
+    <h3 class="reel-subtitle">18:00 hs · Recepción</h3>
+
+    <!-- Cuenta regresiva -->
+    <div class="countdown" id="countdown">
+      <div class="countdown__block">
+        <span id="cd-days">00</span>
+        <small>días</small>
+      </div>
+      <div class="countdown__block">
+        <span id="cd-hours">00</span>
+        <small>hrs</small>
+      </div>
+      <div class="countdown__block">
+        <span id="cd-mins">00</span>
+        <small>min</small>
+      </div>
+      <div class="countdown__block">
+        <span id="cd-secs">00</span>
+        <small>seg</small>
+      </div>
+    </div>
+
+  </div>
+</section>
+    <!-- 5 Lugar 
+    <section class="reel-section reel-section--editorial-bg" data-reveal>
+      <div class="reel-section__inner">
+        <div class="reel-icon-wrap" aria-hidden="true">
+          <svg class="reel-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 21s7-4.35 7-9.5a7 7 0 1 0-14 0c0 5.15 7 9.5 7 9.5z"/>
+            <circle cx="12" cy="11" r="2.5"/>
+          </svg>
+        </div>
+        <p class="reel-label">Lugar</p>
+        <p class="reel-place">La Barra Eventos</p>
+        <a
+          class="reel-btn"
+          href="https://maps.app.goo.gl/mkxByMkFxUiHPP5z6"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Ver ubicación</a>
+      </div>
+    </section> -->
+
+    <section class="reel-section reel-section--editorial-bg section--bg-floral" data-reveal>
+  <div class="reel-section__inner">
+    
+    <!-- Ícono -->
+    <div class="reel-icon-wrap" aria-hidden="true">
+      <svg class="reel-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 21s7-4.35 7-9.5a7 7 0 1 0-14 0c0 5.15 7 9.5 7 9.5z"/>
+        <circle cx="12" cy="11" r="2.5"/>
+      </svg>
+    </div>
+
+    <!-- Texto -->
+    <p class="reel-label">Lugar</p>
+    <h2 class="reel-title">La Barra Eventos</h2>
+
+    <!-- Botón -->
+    <a
+      class="reel-btn"
+      href="https://maps.app.goo.gl/MjCimGQAib1tWmuj9"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Ver ubicación
+    </a>
+
+  </div>
+</section>
+
+    <!-- 6 Cuenta regresiva 
+    <section class="reel-section reel-section--countdown" data-reveal id="section-countdown">
+      <div class="reel-section__inner">
+        <div class="reel-icon-wrap reel-icon-wrap--countdown" aria-hidden="true">
+          <svg class="reel-icon reel-icon--timer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M12 6v6l4 2"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41"/>
+          </svg>
+        </div>
+        <p class="reel-label">Falta</p>
+        <div class="countdown" id="countdown" role="timer" aria-live="polite">
+          <div class="countdown__block">
+            <span class="countdown__num" id="cd-days">00</span>
+            <span class="countdown__unit">días</span>
+          </div>
+          <div class="countdown__sep" aria-hidden="true">:</div>
+          <div class="countdown__block">
+            <span class="countdown__num" id="cd-hours">00</span>
+            <span class="countdown__unit">hrs</span>
+          </div>
+          <div class="countdown__sep" aria-hidden="true">:</div>
+          <div class="countdown__block">
+            <span class="countdown__num" id="cd-mins">00</span>
+            <span class="countdown__unit">min</span>
+          </div>
+          <div class="countdown__sep" aria-hidden="true">:</div>
+          <div class="countdown__block">
+            <span class="countdown__num" id="cd-secs">00</span>
+            <span class="countdown__unit">seg</span>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!--Dresscode-->
+    <section class="reel-section" data-reveal>
+  <div class="reel-section__inner">
+    <p class="reel-label">Dress code</p>
+    <h2 class="reel-title">Elegante</h2>
+    <p class="reel-text"></p>
+  </div>
+</section>
+
+    <!-- 7 Regalo 
+    <section class="reel-section reel-section--editorial-bg reel-section--gift" data-reveal id="section-gift">
+      <div class="reel-section__inner">
+        <div class="reel-icon-wrap" aria-hidden="true">
+          <svg class="reel-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="9" width="18" height="12" rx="2"/>
+            <path d="M12 9v12"/>
+            <path d="M3 14h18"/>
+            <path d="M8.5 9C7.67 6.5 9.2 5 12 5s4.33 1.5 3.5 4"/>
+            <path d="M15.5 9c.83-2.5-.7-4-3.5-4"/>
+          </svg>
+        </div>
+        <h3 class="reel-heading">Regalo</h3>
+        <p class="reel-text">
+          Tu presencia es nuestro mejor regalo,<br />
+          pero si querés ayudarnos con nuestra luna de miel...
+        </p>
+        <div class="alias">
+          <span class="alias__label">Alias</span>
+          <code class="alias__value" id="aliasValue">alias.boda.ejemplo</code>
+        </div>
+        <button type="button" class="reel-btn reel-btn--ghost" id="copyAliasBtn">Copiar alias</button>
+        <p class="toast" id="copyToast" role="status" aria-live="polite" hidden>Alias copiado ✔</p>
+      </div>
+    </section> -->
+
+    <section class="reel-section section--bg-floral" data-reveal>
+  <div class="reel-section__inner">
+    <p class="reel-label">Regalo</p>
+    <p class="reel-text">
+      Tu presencia es nuestro mejor regalo,  
+      pero si deseas hacernos un regalo, podrás depositar en la siguiente cuenta
+    </p>
+
+    <!-- BOTÓN -->
+    <button class="reel-btn" id="toggleGiftBtn">
+      Ver datos para regalo
+    </button>
+
+    <!-- CONTENIDO OCULTO -->
+    <div class="gift-details" id="giftDetails">
+
+      <div class="gift-item">
+        <span>Alias</span>
+        <strong id="aliasValue">alias.boda.ejemplo</strong>
+      </div>
+
+      <div class="gift-item">
+        <span>CBU</span>
+        <strong>0000003100012345678901</strong>
+      </div>
+
+      <div class="gift-item">
+        <span>Titular</span>
+        <strong>Ariel & Daiana</strong>
+      </div>
+
+      <button class="reel-btn reel-btn--ghost" id="copyAliasBtn">
+        Copiar alias
+      </button>
+
+      <p class="toast" id="copyToast" hidden>Alias copiado ✔</p>
+
+    </div>
+  </div>
+</section>
+
+    <!-- 8 Playlist 
+    <section class="reel-section reel-section--playlist" data-reveal id="section-playlist">
+      <div class="reel-section__inner reel-section__inner--wide">
+        <div class="reel-icon-wrap reel-icon-wrap--playlist" aria-hidden="true">
+          <svg class="reel-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 18V5l12-2v13"/>
+            <circle cx="6" cy="18" r="3"/>
+            <circle cx="18" cy="16" r="3"/>
+          </svg>
+        </div>
+        <h3 class="reel-heading reel-heading--playlist">Que no falte tu tema favorito</h3>
+        <p class="reel-text reel-text--narrow">Ayudanos a crear la playlist de la boda</p>
+
+        <div class="playlist-form">
+          <label class="visually-hidden" for="songInput">Nombre de la canción</label>
+          <input
+            type="text"
+            id="songInput"
+            class="playlist-input"
+            placeholder="Artista — Canción"
+            maxlength="200"
+            autocomplete="off"
+          />
+          <button type="button" class="reel-btn" id="addSongBtn">Agregar canción</button>
+        </div>
+
+        <ul class="playlist-list" id="playlistList" aria-live="polite"></ul>
+
+        <a class="reel-link-out" id="suggestSongLink" href="#" target="_blank" rel="noopener noreferrer">Sugerir canción</a>
+      </div>
+    </section> -->
+
+    <section class="reel-section" data-reveal id="section-playlist">
+  <div class="reel-section__inner">
+
+    <p class="reel-label">Música</p>
+    <h2 class="reel-title">Sumá tu canción</h2>
+
+    <p class="reel-text">
+      Ayudanos a crear la playlist de la fiesta 🎶
+    </p>
+
+    <!-- INPUT + BOTÓN -->
+    <div class="playlist-form">
+      <input 
+        type="text" 
+        id="songInput"
+        placeholder="Ej: Coldplay - Viva la Vida"
+      />
+      <button class="reel-btn" id="addSongBtn">
+        Agregar
+      </button>
+    </div>
+
+    <!-- LISTA -->
+    <ul class="playlist-list" id="pl"></ul>
+
+  </div>
+</section>
+
+    <footer class="reel-footer" data-reveal>
+      <div class="reel-section__inner reel-footer__inner">
+        <p class="reel-footer__text">Ariel &amp; Daiana · 2026</p>
+      </div>
+    </footer>
+  </main>
+
+  <div class="rotate-hint" id="rotateHint">
+    <div class="rotate-hint__content">
+      <div class="phone-icon">📱</div>
+      <p>Gir&aacute; tu celular para una mejor experiencia</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

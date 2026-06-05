@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="paper" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faf7f2"/>
+      <stop offset="55%" stop-color="#f3ece4"/>
+      <stop offset="100%" stop-color="#ebe3d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="900" fill="url(#paper)"/>
+  <!-- Textura sutil (grano papel) -->
+  <rect width="1440" height="900" fill="#d8cfc2" opacity="0.04"/>
+  <!-- Composicin floral minimalista  lado derecho -->
+  <g fill="none" stroke="#a89882" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round" opacity="0.42">
+    <path d="M1080 780 Q 1040 520 1120 280 Q 1160 180 1220 140"/>
+    <path d="M1140 760 Q 1180 480 1100 320 Q 1060 220 980 200"/>
+    <path d="M1020 720 Q 980 500 1050 360"/>
+  </g>
+  <g fill="#c9b8a4" opacity="0.22">
+    <ellipse cx="1180" cy="220" rx="14" ry="10" transform="rotate(-15 1180 220)"/>
+    <ellipse cx="1240" cy="280" rx="11" ry="8" transform="rotate(8 1240 280)"/>
+    <ellipse cx="1120" cy="340" rx="12" ry="9" transform="rotate(-22 1120 340)"/>
+    <ellipse cx="1060" cy="420" rx="10" ry="7" transform="rotate(12 1060 420)"/>
+    <ellipse cx="1220" cy="400" rx="9" ry="7" transform="rotate(-8 1220 400)"/>
+  </g>
+  <g fill="#fdfcfa" opacity="0.35">
+    <circle cx="1175" cy="215" r="3.2"/>
+    <circle cx="1235" cy="275" r="2.6"/>
+    <circle cx="1118" cy="335" r="2.8"/>
+    <circle cx="1058" cy="415" r="2.4"/>
+  </g>
+</svg>
