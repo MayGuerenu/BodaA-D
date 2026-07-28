@@ -8,7 +8,7 @@
 
   // --- Configuración editable ---
   /** 24 de octubre 2026, 18:00 (mes 0-indexado: 9 = octubre) */
-  const WEDDING_DATE = new Date(2026, 9, 24, 18, 0, 0);
+  const WEDDING_DATE = new Date(2026, 9, 24, 17, 30, 0);
 
   const GIFT_ALIAS = "boda.ariel.dai";
 
@@ -24,7 +24,7 @@
     title: "Boda Ariel & Daiana",
     details: "Ceremonia y fiesta — La Barra Eventos",
     location: "La Barra Eventos",
-    durationHours: 6,
+    durationHours: 8,
   };
 
   const TIMING = {
