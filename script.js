@@ -24,7 +24,7 @@
     title: "Boda Ariel & Daiana",
     details: "Ceremonia y fiesta — La Barra Eventos",
     location: "La Barra Eventos",
-    durationHours: 8,
+    durationHours: 9,
   };
 
   const TIMING = {
