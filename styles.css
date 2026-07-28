@@ -888,6 +888,10 @@ body {
 
 .reel-footer__inner {
   max-width: 28rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
 }
 
 .reel-footer__text {
@@ -896,6 +900,22 @@ body {
   letter-spacing: 0.32em;
   text-transform: uppercase;
   line-height: 1.35;
+}
+
+.reel-footer__watermark {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 0.68rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  line-height: 1.3;
+  color: rgba(250, 249, 247, 0.38);
+  user-select: none;
+}
+
+.reel-footer__watermark sup {
+  font-size: 0.55em;
+  letter-spacing: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
