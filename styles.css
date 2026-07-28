@@ -898,6 +898,21 @@ body {
   line-height: 1.35;
 }
 
+.reel-footer__brand {
+  margin: 0.65rem 0 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: none;
+  color: rgba(250, 249, 247, 0.45);
+  line-height: 1.35;
+}
+
+.reel-footer__brand sup {
+  font-size: 0.55em;
+  letter-spacing: 0;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
