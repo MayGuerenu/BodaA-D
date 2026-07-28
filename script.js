@@ -1,6 +1,6 @@
 /**
  * Invitación reel — Ariel & Daiana
- * Intro con sobre, música, countdown, calendario, RSVP, regalo y playlist.
+ * Intro con sobre, música, countdown, calendario, RSVP y regalo.
  */
 
 (function () {
@@ -33,8 +33,6 @@
     reducedMultiplier: 0.08,
   };
 
-  const STORAGE_KEY = "ariel-daiana-playlist-v1";
-
   const intro = document.getElementById("intro");
   const reel = document.getElementById("reel");
   const envelopeBtn = document.getElementById("envelopeBtn");
@@ -50,10 +48,6 @@
   const copyToast = document.getElementById("copyToast");
   const toggleGiftBtn = document.getElementById("toggleGiftBtn");
   const giftDetails = document.getElementById("giftDetails");
-
-  const songInput = document.getElementById("songInput");
-  const addSongBtn = document.getElementById("addSongBtn");
-  const playlistList = document.getElementById("playlistList");
 
   const bgMusic = document.getElementById("bgMusic");
   const musicToggle = document.getElementById("musicToggle");
@@ -371,65 +365,6 @@
         ? "Ocultar datos"
         : "Ver datos para regalo";
       toggleGiftBtn.setAttribute("aria-expanded", open ? "true" : "false");
-    });
-  }
-
-  // --- Playlist ---
-  function loadSongs() {
-    try {
-      const raw = localStorage.getItem(STORAGE_KEY);
-      if (!raw) return [];
-      const data = JSON.parse(raw);
-      return Array.isArray(data)
-        ? data.filter((s) => typeof s === "string")
-        : [];
-    } catch {
-      return [];
-    }
-  }
-
-  function saveSongs(songs) {
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(songs));
-    } catch {
-      /* almacenamiento lleno o modo privado */
-    }
-  }
-
-  function renderPlaylist(songs) {
-    if (!playlistList) return;
-    playlistList.innerHTML = "";
-    songs.forEach((song, index) => {
-      const li = document.createElement("li");
-      li.textContent = index + 1 + ". " + song;
-      playlistList.appendChild(li);
-    });
-  }
-
-  function addSong() {
-    if (!songInput || !playlistList) return;
-    const value = songInput.value.trim();
-    if (!value) {
-      songInput.focus();
-      return;
-    }
-    const songs = loadSongs();
-    songs.push(value);
-    saveSongs(songs);
-    renderPlaylist(songs);
-    songInput.value = "";
-    songInput.focus();
-  }
-
-  renderPlaylist(loadSongs());
-
-  if (addSongBtn) addSongBtn.addEventListener("click", addSong);
-  if (songInput) {
-    songInput.addEventListener("keydown", (e) => {
-      if (e.key === "Enter") {
-        e.preventDefault();
-        addSong();
-      }
     });
   }
 
