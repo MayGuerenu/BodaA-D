@@ -10,13 +10,13 @@
   /** 24 de octubre 2026, 18:00 (mes 0-indexado: 9 = octubre) */
   const WEDDING_DATE = new Date(2026, 9, 24, 18, 0, 0);
 
-  const GIFT_ALIAS = "alias.boda.ejemplo";
+  const GIFT_ALIAS = "boda.ariel.dai";
 
   /**
    * WhatsApp RSVP: reemplazá el número (código país + número, sin + ni espacios).
    * Ejemplo Argentina: 54911XXXXXXXX
    */
-  const RSVP_WHATSAPP = "5491100000000";
+  const RSVP_WHATSAPP = "5493329664805";
   const RSVP_MESSAGE =
     "¡Hola! Confirmo mi asistencia a la boda de Ariel y Daiana el 24/10/2026.";
 
